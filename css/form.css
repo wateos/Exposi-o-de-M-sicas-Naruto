@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family:kushina;
+    src: url("../fonts/kushina.otf");
+}
+
+body {
+	 background-image: linear-gradient(darkorange,tomato);
+	 background-attachment: fixed;
+}
+
+h1 {
+	font-family: kushina;
+	text-align: center;
+	font-size: 50px;
+}
+
+#clientes {
+	background-color: white;
+	border: solid 5px #4169E1;
+	border-radius: 15px;
+	padding: 20px;
+	margin: 0 10%;
+}
+
+#clientes legend {
+	font-family: Arial;
+}
+
+#clientes p {
+	font-family: Arial;
+}
+
+#btn {
+	margin: 0 40%;
+}

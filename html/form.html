@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>   
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>FORMULÁRIO PESQUISA NARUTO</title>
+      <link rel="stylesheet" href="../css/form.css" />
+   </head>
+   <body>
+      <div id="container">
+           
+        <h1>Pesquisa</h1>
+		
+        <form id="clientes" name="clientes" method="post" action="mailto:meu.email@dominio.com?&subject=Assunto..." enctype="text/plain" autocomplete="on" novalidate="novalidate">
+              <fieldset id="dados_pessoais">
+                <legend><b>Formulário</b></legend> 
+                  <p>
+                      <label for="nome"><b>Nome:</b></label> 
+                      <input id="nome" name="nome" type="text" placeholder="Digite seu nome..." autofocus="autofocus" size="50" minlength="5" maxlength="20" required="required" />
+                 </p>
+                 <p> 
+                     <label for="email"><b>E-mail:</b></label>  
+                     <input id="email" name="email" type="email" placeholder="Digite seu email..." required="required" />
+                 </p>   
+                 <p> 
+                     <label for="idade"><b>Idade:</b></label>  
+                     <input id="idade" name="idade" type="number" min="0" max="100" step="1" required="required" />
+                 </p> 
+                 <p> 
+                     <label for="dia"><b>Data:</b></label>  
+                     <input id="dia" name="dia" type="date" />
+                 </p>
+                 <p> 
+                     <label for="musica"><b>Música preferida:</b></label>  
+                     <input id="musica" name="musica" type="text" />
+                 </p>
+                 <p> 
+                     <label><b>Como você conheceu o Naruto? </b></label>  
+                     <input id="conhecer1" name="conhecer" type="radio"  value="conhecer" required="required" /> Indicação de uma amigo
+                     <input id="conhecer2" name="conhecer" type="radio"  value="conhecer" /> Internet
+                     <input id="conhecer3" name="conhecer" type="radio"  value="conhecer" checked="checked"/> Televisão
+                     <input id="conhecer4" name="conhecer" type="radio"  value="conhecer" /> Plataforma de Streaming
+                 </p> 
+                 <p> 
+                     <label><b>Selecione os Animes que você já viu:</b></label>  
+                     <input id="anime1" name="anime1" type="checkbox"  value="dragon" /> Dragon Ball Z
+                     <input id="anime2" name="anime2" type="checkbox"  value="yuyu" /> Yu Yu Hakusho
+                     <input id="anime3" name="anime3" type="checkbox"  value="cavaleiros"/> Cavaleiros do Zodíaco
+                     <input id="anime4" name="anime4" type="checkbox"  value="pokemon" /> Pokémon
+                 </p> 
+				 <p> 
+                     <label><b>O que você achou da nossa exposição?</b></label>  
+                     <input id="exp1" name="exp" type="radio"  value="ruim" required="required" /> Ruim
+                     <input id="exp2" name="exp" type="radio"  value="fraco" /> Fraco
+                     <input id="exp3" name="exp" type="radio"  value="bom" checked="checked"/> Bom
+                     <input id="exp4" name="exp" type="radio"  value="exc" /> Excelente
+                 </p> 				 
+				 <p>
+                        <label id="comente"><b>Deixe o seu comentário!</b></label></br>
+                        <textarea id="comente" name="comente" rows="5" cols="40" maxlength="250">Comente aqui...</textarea>
+                 </p>				 
+				 <p id="btn">  
+                   <input type="submit" value="Enviar" onclick="alert('Obrigado pelo feedback!')"/> 
+				    <input type="reset" value="Limpar"/>  
+                 </p>
+                </fieldset> 
+              
+          </form>
+
+       </div>    
+            
+    </body>
+</html>     
+             
+               

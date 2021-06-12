@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+/* ESTILIZAÇÃO-BÁSICA */
+
+body {
+    font-family: verdana;
+    font-size: 20xp;
+    background-image: linear-gradient(darkorange,tomato);
+    background-attachment: fixed;
+}  
+
+#box_header {  
+	background-color: #1C1C1C;
+    padding: 15px 5%;
+ }
+ 
+.box_article { 
+    background-color: white;
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px 5%;
+    border: solid 5px #4169E1;
+    box-sizing: border-box;
+    overflow: auto;
+    opacity: 0.800;
+    font-family: kushina;
+    font-size: 1.5rem;
+}
+ 
+#box_footer {  
+    background-color: #1C1C1C;
+    padding: 30px 5%;
+    overflow: auto;
+ }
+
+.circular{
+    border-radius: 50%;
+}
+
+h1 {
+    color: #FFFAFA;
+    font-family: kushina;
+    font-size: 2.9rem;
+}
+h1, img, .tit2,#link, #box_footer {
+    text-align: center;
+}
+.tit2{
+    color: darkorange;
+    font-family:kushina;
+    font-size: 1.8em;
+}
+
+audio, video{
+    width: 100%;
+}
+/* IFRAME(QUADRO) */
+
+#quadro {
+    margin: 0 auto;
+    display: block;
+    border: 0px;
+    height: 180px;
+ }
+
+/* IMAGEM DE FUNDO */
+
+#box_section {
+    padding: 20px;
+    background-image: url("../imagens/naruto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto; 
+	
+}
+
+/* FONT: */
+
+@font-face{
+    font-family:kushina;
+    src: url("../fonts/kushina.otf");
+}
+
+/* MEDIA-SCREEN-e-GRID(Resposividade) */
+
+.a {grid-area: a;	
+}
+.b {grid-area: b;	
+}
+.c {grid-area: c;	
+}
+.d {grid-area: d;	
+}
+
+#container {
+    background-color: lightgray;
+    margin: 50px 5%;
+	grid-template-columns: 1fr;
+	display: grid;
+	grid-template-areas:
+	  "a"
+	  "b"
+	  "c"
+	  "d";
+}
+
+
+@media screen and (max-width:500px) {
+	#container {
+		grid-template-areas:
+		    "b"
+			"a"
+			"c"
+			"d";
+	}
+	header, section, footer{
+		box-sizing: border-box;
+		margin: 0 auto;
+		overflow: auto;
+		width: 100%;
+		height: auto;
+	}
+}
+
+/*TABELA*/
+
+table{
+	/*margin: 0 auto;*/
+    overflow: auto;
+	width: 100%;
+	height: auto;
+}
+
+#tabela th, tr, td{
+	border: 1px solid black;
+	border-radius: 6px;
+	padding: 8px;	
+}
+
+#tabela th {
+	background-color: #4169E1;
+    background-attachment: fixed;
+}
+
+#tabela td {
+	background-color: #F1F1F1;
+    background-attachment: fixed;
+}
+
+/*LISTA-COM-FLEX-e-LINK(MENU)*/
+
+#flex-lista{
+     display: flex;
+     flex-direction: around;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: stretch;
+     list-style: none;
+     padding:0;
+	
+}
+#flex-lista li{
+    flex: 1 1 205px;
+    margin: 5px;
+    font-family: kushina;
+    font-size: 1.3rem;
+}
+
+/* LISTA-LINK */
+
+#flex-lista a:link{
+    display: block;
+    padding: 15px;
+    background-color:darkorange;
+    text-align: center;
+    text-decoration: none;
+    color: #1C1C1C;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+#flex-lista a:hover{
+    background-color: #6495ED;
+}
+#flex-lista a:visited{
+    color: #FFFAFA;
+}
+
+/* LINK */
+
+a:hover{color:orange;}
+  
+
+
+    
